@@ -1,0 +1,189 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Profile page container */
+.profile-page-container {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #ddd;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-btn {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #4CAF50;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-btn:hover {
+    color: #45a049;
+}
+
+/* Profile info section */
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.profile-image {
+    position: relative;
+}
+
+#profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.upload-btn {
+    display: none;
+}
+
+.upload-label {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.profile-details {
+    width: 100%;
+    max-width: 600px;
+}
+
+.profile-details h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.save-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.save-btn:hover {
+    background-color: #45a049;
+}
+
+/* Activity section */
+.activity {
+    margin-top: 40px;
+}
+
+.activity h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.activity-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.activity-item p {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.activity-time {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 1rem;
+}
+
+footer a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

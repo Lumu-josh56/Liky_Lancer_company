@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="profile-page.css">
+</head>
+<body>
+    <div class="profile-page-container">
+        <header>
+            <div class="logo">
+                <h1>My Profile</h1>
+            </div>
+            <nav>
+                <a href="home.html" class="nav-btn">Home</a>
+                <a href="logout.html" class="nav-btn">Log Out</a>
+            </nav>
+        </header>
+
+        <section class="profile-info">
+            <div class="profile-image">
+                <img src="default-profile.jpg" alt="Profile Image" id="profile-img">
+                <input type="file" id="upload-btn" class="upload-btn" onchange="uploadImage()">
+                <label for="upload-btn" class="upload-label">Change Profile Picture</label>
+            </div>
+
+            <div class="profile-details">
+                <h2>User Information</h2>
+                <form id="profile-form" action="/update-profile" method="POST">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Bio</label>
+                        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="save-btn">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="activity">
+            <h2>Your Recent Activity</h2>
+            <div class="activity-item">
+                <p>Joined a new group: Web Developers Network</p>
+                <span class="activity-time">2 hours ago</span>
+            </div>
+            <div class="activity-item">
+                <p>Updated profile picture</p>
+                <span class="activity-time">1 day ago</span>
+            </div>
+            <div class="activity-item">
+                <p>Posted a new article: "Understanding JavaScript Closures"</p>
+                <span class="activity-time">3 days ago</span>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Our Website | <a href="privacy-policy.html">Privacy Policy</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Simulating the data from registration or server-side response
+        const userData = {
+            username: "JohnDoe123",
+            email: "johndoe@example.com",
+            bio: "I'm a web developer passionate about coding.",
+            location: "New York, USA"
+        };
+
+        // Populate profile page with user data
+        window.onload = function() {
+            document.getElementById("username").value = userData.username;
+            document.getElementById("email").value = userData.email;
+            document.getElementById("bio").value = userData.bio;
+            document.getElementById("location").value = userData.location;
+        };
+
+        // Function to handle profile picture upload
+        function uploadImage() {
+            const fileInput = document.getElementById("upload-btn");
+            const profileImage = document.getElementById("profile-img");
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+
+            reader.onloadend = function() {
+                profileImage.src = reader.result;
+            };
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+</body>
+</html>

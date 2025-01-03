@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Settings</title>
+</head>
+<style>
+    /* Reset some default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and main container */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    margin: 0;
+}
+
+.account-settings-container {
+    background-color: white;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Section styling */
+.settings-section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Form labels */
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Form input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Button for update preferences */
+#updateNotificationsBtn {
+    width: auto;
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+</style>
+<body>
+    <div class="account-settings-container">
+        <h1>Account Settings</h1>
+        
+        <div class="settings-section">
+            <h2>Profile Settings</h2>
+            <form id="profileForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <button type="submit" id="updateProfileBtn">Update Profile</button>
+            </form>
+        </div>
+
+        <div class="settings-section">
+            <h2>Change Password</h2>
+            <form id="passwordForm">
+                <label for="currentPassword">Current Password:</label>
+                <input type="password" id="currentPassword" name="currentPassword" required>
+                
+                <label for="newPassword">New Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                
+                <label for="confirmPassword">Confirm New Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                
+                <button type="submit" id="changePasswordBtn">Change Password</button>
+            </form>
+        </div>
+
+        <div class="settings-section">
+            <h2>Notification Preferences</h2>
+            <label for="emailNotifications">Receive Email Notifications:</label>
+            <input type="checkbox" id="emailNotifications" name="emailNotifications">
+            
+            <button id="updateNotificationsBtn">Update Preferences</button>
+        </div>
+
+        <div class="settings-section">
+            <h2>Delete Account</h2>
+            <button id="deleteAccountBtn">Delete Account</button>
+        </div>
+    </div>
+
+    <script src="account-settings.js"></script>
+</body>
+</html>

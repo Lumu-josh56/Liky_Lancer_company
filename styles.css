@@ -1,0 +1,280 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inbox-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+.message-list {
+    margin-top: 20px;
+}
+
+.message {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.message:hover {
+    background-color: #f1f1f1;
+}
+
+.message p {
+    margin: 5px 0;
+}
+
+.message .subject {
+    font-weight: bold;
+    color: #333;
+}
+
+.message .content {
+    color: #666;
+}
+
+
+/* ----notifications styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.notifications-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+.notification-list {
+    margin-top: 20px;
+}
+
+.notification {
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.notification.new {
+    border-left: 5px solid #4CAF50;
+    background-color: #e7ffe6;
+}
+
+.notification p {
+    margin: 5px 0;
+}
+
+.notification .message {
+    font-weight: bold;
+    color: #333;
+}
+
+.notification .time {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* account settings styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.settings-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+.settings-form fieldset {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.settings-form legend {
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.settings-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.settings-form input, .settings-form select, .settings-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.settings-form input[type="checkbox"] {
+    width: auto;
+}
+
+.settings-form .save-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.settings-form .save-btn:hover {
+    background-color: #45a049;
+}
+
+.settings-form .danger {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.settings-form .danger:hover {
+    background-color: #d32f2f;
+}
+
+/* logout styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.logout-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #f44336;
+}
+
+p {
+    color: #555;
+}
+
+/* register page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.register-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #45a049;
+}
+
+.password-strength, .password-match {
+    font-size: 0.9em;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    color: #f44336;
+    text-align: left;
+}
